@@ -44,7 +44,7 @@ The purpose of this project is to focus on how to get these three projects to wo
 <a name="InstallWindows"></a>
 ### Windows
 #### [Hosts File Editor](https://github.com/scottlerch/HostsFileEditor)
-- Hosts File Editor makes it easy to change your hosts file as well as archive multiple versions for easy retrieval.
+    - Hosts File Editor makes it easy to change your hosts file as well as archive multiple versions for easy retrieval.
     - Set `laravel` to your docker host IP. See [Example](screenshots/SimpleHostsEditor/AddHost_dockerhost.png).
 
 <a name="InstallMac"></a>
