@@ -81,7 +81,8 @@ push -u origin master
 ### Laradock
 Since we will be using LaraDock as a submodule,
 ```
-# /c/_dk/laravel-laradock-phpstorm
+cd into project root /blog
+
 git submodule add https://github.com/LaraDock/laradock.git
 cd laradock
 
@@ -99,13 +100,14 @@ This image provides support out of the box for `SSH` although it is not enabled 
 Although xdebug is installed, it is not switched on by default. This is so that tools like `composer` will not be slowed down.
 PHPStorm is configured to enable `xdebug` on-demand when running unit tests. See [PHPStorm Intepreters](https://github.com/LarryEitel/laravel-laradock-phpstorm/blob/master/screenshots/PHPStorm/Settings/LangsPHPInterpreters.png) example.
 
-### Edited laradock/docker-compose.yml
-
+### Edit laradock/.env
+    copy env-example to .env
+    then edit .env
 #### Workspace Utilities Container
-- Set: INSTALL_XDEBUG=true
+    - Set: INSTALL_XDEBUG=true
 
 #### PHP-FPM Container
-- Set: INSTALL_XDEBUG=true
+    - Set: INSTALL_XDEBUG=true
     - Note: xdebug is installed but disabled until switched on. See: [Debug Web Site](#UsagePHPStormDebugSite)
 
 NOTE: PHP_IDE_CONFIG="serverName=[laravel](https://github.com/brazitech/laravel-laradock-phpstorm/blob/master/screenshots/PHPStorm/Settings/DeploymentConnection.png)" must point to a valid `Build, Execution, Deployment > Deployment > Name`.
