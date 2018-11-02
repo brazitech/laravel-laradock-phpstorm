@@ -10,6 +10,7 @@ Wiring up [Laravel](https://laravel.com/), [LaraDock](https://github.com/LaraDoc
 - [Intro](#Intro)
 - [Installation](#Installation)
     - [Windows](#InstallWindows) 
+    - [Mac](#InstallMac)
     - [Docker](#InstallDocker) 
     - [Laravel](#InstallLaravel) 
     - [LaraDock](#InstallLaraDock) 
@@ -46,7 +47,8 @@ The purpose of this project is to focus on how to get these three projects to wo
 - Hosts File Editor makes it easy to change your hosts file as well as archive multiple versions for easy retrieval.
     - Set `laravel` to your docker host IP. See [Example](screenshots/SimpleHostsEditor/AddHost_dockerhost.png).
 
-<a name="InstallMac"></a>### Windows
+<a name="InstallMac"></a>
+### Mac
 #### [Hosts File on mac]
 - Hosts File on the mac can be edited as follows.
     - sudo nano /etc/hosts
