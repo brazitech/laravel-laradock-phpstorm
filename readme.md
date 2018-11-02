@@ -31,7 +31,8 @@ Wiring up [Laravel](https://laravel.com/), [LaraDock](https://github.com/LaraDoc
 ## Intro
 Goal is to put together a sample Laravel project running on LaraDock that can run in a development environment complete with remote debugging. 
 
-This project is tested on Docker Native Windows.
+This project is tested on Docker Native Windows and mac OSX.
+(INFO) Docker on mac will only work with cpus that support hyper-v. at this time we have not gotten laradock to work with virual toolbox.
 
 <a name="Installation"></a>
 ## Installation
@@ -45,6 +46,11 @@ The purpose of this project is to focus on how to get these three projects to wo
 - Hosts File Editor makes it easy to change your hosts file as well as archive multiple versions for easy retrieval.
     - Set `laravel` to your docker host IP. See [Example](screenshots/SimpleHostsEditor/AddHost_dockerhost.png).
 
+<a name="InstallMac"></a>### Windows
+#### [Hosts File on mac]
+- Hosts File on the mac can be edited as follows.
+    - sudo nano /etc/hosts
+    
 <a name="InstallDocker"></a>
 ### Docker
 
@@ -55,22 +61,24 @@ The purpose of this project is to focus on how to get these three projects to wo
 Install Laravel somewhere. See from perspective of [LaraDock Installation](https://github.com/LaraDock/laradock#Installation).
 
 - Example with [Laravel Installer](https://laravel.com/docs/5.2#installing-laravel)
-`laravel new laravel-laradock-phpstorm`
-
+`laravel new laravel-laradock-phpstorm` or
+ composer create-project laravel/laravel ((name-of-your-prjject)) example:composer create-project laravel/laravel blog
+ 
 #### Create a GIT repo
 - [Create a new repository](https://github.com/new)
 ```
-cd laravel new laravel-laradock-phpstorm
+cd ((name-of-your-prjject))
 git init
 git add .
 git  commit -m "first commit"
-git remote add origin git@github.com:brazitech/laravel-laradock-phpstorm.git
-git push -u origin master
+git remote add origin git@github.com:((git user))/((name-of-your-project)).git
+      example git remote add origin git@github.com:brazitech/blog.git
+push -u origin master
 ```
 
 <a name="InstallLaraDock"></a>
 ### Laradock
-Since we will using LaraDock as a submodule,
+Since we will be using LaraDock as a submodule,
 ```
 # /c/_dk/laravel-laradock-phpstorm
 git submodule add https://github.com/LaraDock/laradock.git
