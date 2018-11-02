@@ -1,6 +1,8 @@
 # laravel-laradock-phpstorm
 forked from LarryEitel/laravel-laradock-phpstorm
 
+updated to include laravel 5.7
+
 Wiring up [Laravel](https://laravel.com/), [LaraDock](https://github.com/LaraDock/laradock) [Laravel+Docker] and [PHPStorm](https://www.jetbrains.com/phpstorm/) to play nice together complete with remote xdebug'ing as icing on top!
 
 
