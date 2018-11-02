@@ -49,8 +49,7 @@ The purpose of this project is to focus on how to get these three projects to wo
 
 <a name="InstallMac"></a>
 ### Mac
-#### [Hosts File on mac]
-- Hosts File on the mac can be edited as follows.
+    - Hosts File on the mac can be edited as follows.
     - sudo nano /etc/hosts
     
 <a name="InstallDocker"></a>
